@@ -1,0 +1,25 @@
+@import url(../../../Components/Header/header.css);
+
+.cta-text,
+.font-uber,
+.btn,
+.font-txt-bold {
+  font-family: "UberMoveBold";
+}
+.font-txt {
+  font-family: "UberMoveMedium";
+}
+.font-txt-regular{
+  font-family: "UberMoveRegular";
+}
+.btn {
+  padding: 12px 30px;
+  border-radius: 6px;
+  display: inline-block;
+  font-family: "UberMoveMedium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 15px;
+  transition: 0.3s all;
+  cursor: pointer;
+}
