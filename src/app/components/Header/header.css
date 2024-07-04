@@ -31,6 +31,9 @@
   .font-txt-regular{
     font-family: UberMoveRegular;
   }
+  .font-txt-light{
+    font-family: UberMoveLight;
+  }
   .logo,
   .name-user {
     font-family: "UberMoveMedium", sans-serif;

@@ -7,7 +7,7 @@ function Accondion({ title, content }) {
     <div className="pt-6 pb-2 w-full border-b  border-gray-400">
       <button
         onClick={() => setAccondionOpen(!accondionOpen)}
-        className=" flex justify-between items-start text-left w-full font-txt text-lg pb-4 pl-6"
+        className=" flex justify-between items-start text-left w-full font-txt text-base pb-4 pl-6"
       >
         {title}
         {/*accondionOpen ? <span>+</span> : <span>-</span>*/}
@@ -45,7 +45,7 @@ function Accondion({ title, content }) {
         }`}
       >
         <div className="overflow-hidden pb-1 pl-6">
-          <span className=" text-lg text-black">{content}</span>
+          <span className=" text-base text-black">{content}</span>
         </div>
       </div>
     </div>

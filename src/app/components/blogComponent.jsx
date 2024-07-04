@@ -13,14 +13,14 @@ function BlogComponent(props) {
                 height={800}
               />
               </div>
-              <h4 className="text-h4-bold text-lg my-4">
+              <h4 className="font-txt-bold text-lg my-4">
                 {props.title}
               </h4>
-              <p className="text-lg">
+              <p className="text-base">
                 {props.content}
               </p>
               <div className=" inline-flex my-10">
-                <p className="text-black font-txt border-b pb-1">
+                <p className="text-black font-txt-light border-b pb-1">
                   {props.titleBtn}
                 </p>
               </div>
