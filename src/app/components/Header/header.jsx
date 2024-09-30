@@ -7,7 +7,7 @@ import Image from "next/image";
 function Header() {
   const [isMenuOpen,setIsMenuOpen]=useState(false)
   return (
-    <header className="w-full bg-black h-14 text-white flex items-center mx-auto flex-col sm:w-">
+    <header className="w-full bg-black h-14 text-white flex items-center mx-auto flex-col lg:h-auto">
       <div className="relative flex items-center justify-between w-full max-w-7xl mx-auto p-5 z-10">
         <div className="item justify-between items-center lg:flex">
           <Link href="/">

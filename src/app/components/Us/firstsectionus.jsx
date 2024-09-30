@@ -3,6 +3,7 @@ import Accondion from "../FaqComponents/Accordion";
 import Secondsection from "../HomeComponents/moduloPadrao";
 import BlogComponent from "../blogComponent";
 import BoxWithIcon from "../boxWithIcon";
+import Link from "next/link";
 function Firstsectionus() {
   return (
     <>
@@ -41,7 +42,7 @@ function Firstsectionus() {
         </div>
       </section>
 
-      <section className="px-5 lg:pl-24 lg:pr-96 pt-14 pb-7 bg-ceo-bg bg-center bg-no-repeat bg-cover" style={{ backgroundImage: "url('https://www.uber-assets.com/image/upload/v1590112350/assets/ba/e2d6c0-0335-4c4c-ad45-04097c24e819/original/dara-desktop.jpg')" }} >
+      <section className="px-5 lg:pl-24 lg:pr-96 pt-14 pb-7 bg-ceo-bg bg-center bg-no-repeat bg-cover lg:mt-10" style={{ backgroundImage: "url('https://www.uber-assets.com/image/upload/v1590112350/assets/ba/e2d6c0-0335-4c4c-ad45-04097c24e819/original/dara-desktop.jpg')" }} >
         <div className="flex flex-col h-[380px] gap-5 w-2/4">
           <h1 className="  text-white font-txt-bold text-4xl md:text-5xl  lg:text-5xl lg:leading-snug ">
             Uma carta do nosso CEO
@@ -49,17 +50,16 @@ function Firstsectionus() {
           <span className="text-white text-base">
           Conheça o compromisso da Uber em disponibilizar a tecnologia que pode ajudar os usuários da nossa plataforma global a fazer a transição para a mobilidade sustentável.
           </span>
-          <a
-            href="#"
-            target="_blank"
-            className="w-auto  max-w-60  bg-black rounded-lg py-3 px-3 text-white text-center lg:mt-2"
-          >
-            Leia a carta de Dara
-          </a>
+          <Link 
+              target="_blank" 
+              className="w-auto  max-w-60  bg-black rounded-lg py-3 px-3 text-white text-center lg:mt-2" 
+              href="https://investor.uber.com/a-letter-from-our-ceo/?uclick_id=bf765484-6082-4c24-863d-1244774412a7">
+                Leia a carta de Dara
+            </Link>
         </div>
       </section>
 
-      <Secondsection sectionClass="flex-col-reverse min-[500px] px-6 sm:flex-col lg:flex-row" divRightClass="flex  items-baseline w-full" image="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_558,h_372/v1603308507/assets/f6/0c9607-ae68-43d5-9e88-79f3011d88ee/original/Sustainability.jpg"  title="Sustentabilidade" imageClasse="rounded-none" h2Classe="text-[28px] lg:text-2x1 text-gray-800" content="A Uber está comprometida em se tornar uma plataforma totalmente elétrica e sem emissões de carbono até 2040. O plano é que todas as viagens sejam feitas em veículos leves (micromobilidade), sem emissão de poluentes ou por transporte público. Como a maior plataforma de mobilidade no mundo, é nossa responsabilidade enfrentar de maneira mais enfática o desafio das mudanças climáticas. Faremos isso ao oferecer aos usuários mais formas de viajar de modo sustentável, ajudar motoristas parceiros na adaptação a veículos elétricos, priorizar a transparência, além de fazer parcerias com ONGs e o setor privado para agilizar a transição para o uso de energias limpas e justas." contentClasse="text-[18px]" showButton="true" loginText="Veja como funciona"/>
+      <Secondsection sectionClass="flex-col-reverse min-[500px] px-6 sm:flex-col lg:flex-row" divRightClass="flex  items-baseline w-full" image="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_558,h_372/v1603308507/assets/f6/0c9607-ae68-43d5-9e88-79f3011d88ee/original/Sustainability.jpg" title="Sustentabilidade" imageClasse="rounded-none" h2Classe="text-[28px] lg:text-2x1 text-gray-800" content="A Uber está comprometida em se tornar uma plataforma totalmente elétrica e sem emissões de carbono até 2040. O plano é que todas as viagens sejam feitas em veículos leves (micromobilidade), sem emissão de poluentes ou por transporte público. Como a maior plataforma de mobilidade no mundo, é nossa responsabilidade enfrentar de maneira mais enfática o desafio das mudanças climáticas. Faremos isso ao oferecer aos usuários mais formas de viajar de modo sustentável, ajudar motoristas parceiros na adaptação a veículos elétricos, priorizar a transparência, além de fazer parcerias com ONGs e o setor privado para agilizar a transição para o uso de energias limpas e justas." contentClasse="text-[18px]" showButton="true" loginText="Saiba mais" link="https://www.uber.com/br/pt-br/about/sustainability/?uclick_id=bf765484-6082-4c24-863d-1244774412a7"/>
       <Secondsection sectionClass=" min-[500px] lg:mt-20 px-6 sm:flex-col lg:flex-row" divRightClass="flex items-baseline" image="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_558,h_372/v1554854756/assets/74/0853d5-80e4-414a-91d7-6fd0b15a136d/original/UberIM_20250-medium-%282%29.jpg"  title="Viagens e muito mais" imageClasse="rounded-none" h2Classe="text-[28px] lg:text-2x1 text-gray-800" content="Além de oferecer aos usuários uma melhor mobilidade, possibilitamos a entrega de pedidos de forma ágil e econômica, expandindo o acesso à assistência médica, criando novas soluções para o transporte de cargas e permitindo que as empresas simplifiquem as viagens dos seus colaboradores. Além disso, ajudamos sempre os motoristas e entregadores parceiros a ganharem dinheiro." contentClasse="text-[18px]" showButton="true" pExtra="true" loginText="Como usar o app da Uber" loginText2="O que oferecemos"/>
       <Secondsection sectionClass=" p-0   min-[500px] lg:flex-row-reverse " leftSideClass="lg=w-1/6" divRightClass="flex items-baseline px-6 lg:5/6" image="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_558,h_372/v1555433729/assets/13/b383de-93a1-4327-8812-91de86e3edd9/original/_background-01.svg"  title="Sua tranquilidade é nossa prioridade" imageClasse="rounded-none lg:ml-10" h2Classe="lg:text-2x1 text-gray-800" content="A tranquilidade dos usuários e motoristas parceiros é essencial. Estamos comprometidos em fazer a nossa parte, e a tecnologia é uma peça fundamental dessa estratégia. Por meio de parcerias com organizações e especialistas em segurança, estamos desenvolvendo novas tecnologias que contribuem para um mundo mais tranquilo e com maior mobilidade para as pessoas." contentClasse="text-[18px]" showButton="true"  loginText="Veja como funciona"/>
       <section className="first-section-black items-center justify-between lg:block w-full max-w-7xl mx-auto pt-5 px-5 mt-5 bg-white sm:pt-10 sm:flex sm:pb-10">

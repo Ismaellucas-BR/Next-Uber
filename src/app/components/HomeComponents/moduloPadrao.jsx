@@ -18,7 +18,7 @@ function Secondsection(props) {
         </p>
         {props.showButton && (
           <div className="loginRedirect flex items-center mt-4 gap-5">
-            {props.btn &&(<a className="btn-start mr-4">{props.buttonText}</a>)}
+            {props.btn &&(<a target="_blank" href={props.link} className="btn-start mr-4">{props.buttonText}</a>)}
             <p className="text-black mt-4 border-b pb-1">
               {props.loginText}
             </p>

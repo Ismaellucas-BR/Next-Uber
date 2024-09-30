@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 function SecondSc() {
   return (
@@ -8,7 +9,7 @@ function SecondSc() {
           className="rounded-md w-full"
           src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_800,h_800/v1684855112/assets/96/4dd3d1-94e7-481e-b28c-08d59353b9e0/original/earner-illustra.png"
           alt="Homem dentro do carro"
-          layout="responsive"  // Usar layout responsivo para se ajustar ao tamanho do contêiner
+          layout="responsive"
           width={800}
           height={800}
         />
@@ -22,10 +23,12 @@ function SecondSc() {
         </p>
         
           <div className="loginRedirect flex items-center mt-4 gap-5">
-            <a className="btn-start mr-4">Começar</a>
-            <p className="text-black mt-4 border-b pb-1">
-            Já tem uma conta? Fazer login
-            </p>
+            <Link 
+              target="_blank" 
+              className="btn-start mr-4" 
+              href="/dirigir">
+                Começar
+            </Link>
           </div>
       </div>
     </section>

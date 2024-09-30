@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import RideWithUber from "../../../../public/assets/Ride-with-Uber.webp";
+import Link from "next/link";
 function FirtsSection() {
   return (
     <div className="w-full bg-black">
@@ -12,7 +12,12 @@ function FirtsSection() {
           <p className="text-white">
             Solicite uma viagem, entre no carro e relaxe.
           </p>
-          <a className=" btn-price text-slate-200 ">Ver preços</a>
+          <Link 
+            target="_blank" 
+            className=" btn-price text-slate-200 " 
+            href="https://m.uber.com/looking?uclick_id=bf765484-6082-4c24-863d-1244774412a7&marketing_vistor_id=13e8c7ec-0f3f-4bf4-85e6-ee7c3b2695bb">
+              Ver preços
+          </Link>
         </div>
         <div className="right-side mt-10  flex justify-end pb-10 lg:mt-0 lg:w-3/5 lg:px-28">
           <Image

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 function ThirdSection() {
   return (
@@ -13,10 +14,18 @@ function ThirdSection() {
             refeições e entregas locais para empresas de todos os portes
           </p>
           <div className="loginRedirect flex items-center mt-4">
-            <a className="btn-start mr-4 ">Começar</a>
-            <p className="text-black mt-4 border-b pb-1">
-              Confira nossas soluções
-            </p>
+            <Link 
+              target="_blank" 
+              className="btn-start mr-4" 
+              href="https://www.uber.com/br/pt-br/business/?uclick_id=bf765484-6082-4c24-863d-1244774412a7">
+                Começar
+            </Link>
+            <Link 
+              target="_blank" 
+              className="text-black mt-4 border-b pb-1" 
+              href="https://www.uber.com/br/pt-br/business/?uclick_id=bf765484-6082-4c24-863d-1244774412a7">
+                Confira nossas soluções
+            </Link>
           </div>
         </div>
         <div className="right-side mt-5 md:mt-10  flex justify-end pb-10  lg:mt-0 lg:w-3/5">
